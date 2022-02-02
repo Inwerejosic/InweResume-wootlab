@@ -1,0 +1,108 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="container">
+  <div class="create-blog content">
+    <form action="/blogs" method="POST">
+<!-- Name -->
+      <div class="col-md-4">
+        <label for="inputfName" class="form-label">First name</label>
+        <input type="text" class="form-control" id="first-name" name="fName">
+      </div>
+      <div class="col-md-4">
+        <label for="middle-name" class="form-label">Middle name</label>
+        <input type="text" class="form-control" id="middle-name" name="mName">
+      </div>
+      <div class="col-md-4">
+        <label for="last-name" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="last-name" name="lName">
+      </div>
+<!-- Career summary -->
+      <div class="form-floating">
+        <textarea class="form-control" name="summary" id="summary" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Career Summary</label>
+      </div>
+<!-- Contact details -->
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" name="email">
+      </div>
+      <div class="col-md-6">
+        <label for="github" class="form-label">Github</label>
+        <input type="github" class="form-control" id="github" placeholder="Your Github" name="github">
+      </div>
+      <div class="col-6">
+        <label for="Address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Your address" name="address">
+      </div>
+      <div class="col-6">
+        <label for="inputAddress2" class="form-label">Linkedin</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Your Linkedin" name="linkedin">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPhone" class="form-label">Phone no.</label>
+        <input type="text" class="form-control" id="phone">
+      </div>
+      <!-- Education -->
+      <div class="col-md-4">
+        <label for="inputSchool" class="form-label">School</label>
+        <input type="text" class="form-control" id="inputEmail4" name="school">
+      </div>
+      <div class="col-md-4">
+        <label for="inputAddress" class="form-label">Year of Graduation</label>
+        <input type="text" class="form-control" id="Graduation" name="endDateSchool">
+      </div>
+      <div class="col-md-4">
+        <label for="Course" class="form-label">Course of study</label>
+        <input type="Course" class="form-control" id="Course" name="courseStudied">
+      </div>  
+      <div class="col-md-3">
+        <label for="activitiesSchool" class="form-label">Activities</label>
+        <input type="text" class="form-control" id="activitiesSchool" name="activitiesSchool">
+      </div>
+<!-- Hobbies -->
+      <div class="col-md-3">
+        <label for="hobbies" class="form-label">Hobbies</label>
+        <input type="text" class="form-control" id="hobbies" name="hobbies">
+      </div>
+      <!-- Skills -->
+      <div class="col-md-3">
+        <label for="Skills" class="form-label">Skills</label>
+        <input type="Skills" class="form-control" id="Skills" name="skills">
+      </div>
+<!-- Experience -->
+      <div class="col-md-3">
+        <label for="company" >Company</label>
+        <input type="company" class="form-control" id="company" name="company">
+      </div>
+      <div class="col-md-3">
+        <label for="w-location">Location</label>
+        <input type="w-location" class="form-control" id="wCity" name="location">
+      </div>
+      <div class="col-md-3">
+        <label for="w-postion">Position</label>
+        <input type="w-postion" class="form-control" id="w-postion" name="postion">
+      </div>
+      <div class="col-md-4">
+        <label for="endDateWork" class="form-label">Year of Graduation</label>
+        <input type="text" class="form-control" id="endDateWork" name="endDateWork">
+      </div>
+      <div class="col-md-3">
+        <label for="duty-1">Duties</label>
+        <input type="duty-1" class="form-control" id="duty-1" name="duties">
+      </div>
+<!-- Submit button -->
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+  </div>
+  
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
