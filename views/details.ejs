@@ -48,10 +48,6 @@
     <a class="delete" data-doc="<%= blog._id %>">
       <img src="/trashcan.svg" alt="delete icon">
     </a>
-    <!-- <a class="downlaod" data-doc="<%= blog._id %>">
-      <img src="/trashcan.svg" alt="downlaod icon">
-       -->
-    </a>
   </div>
   </div>
   </div>
@@ -87,7 +83,7 @@ async function generatePDF(){
     })
     doc.save("myfile.pdf");
 
-    document.getElementById("download").innerHTML = "click to download"
+    document.getElementById("download").innerHTML = "Downloaded"
 }
     
   </script>
