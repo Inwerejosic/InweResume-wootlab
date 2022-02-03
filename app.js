@@ -3,12 +3,15 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const blogRoutes = require('./routes/blogRoutes');
 const puppeteer = require('puppeteer')
+const dotenv = require("dotenv")
+dotenv.config()
 
 // express app
 const app = express();
 
 // connect to mongodb & listen for requests
-const dbURI = "mongodb+srv://inwerejosic1:WescoCable@my-blod-db.wawbt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+// 
+const dbURI = process.env.dbURI
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(3000))
